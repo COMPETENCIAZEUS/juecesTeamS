@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrossFit Competition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CrossFit Competition - WOD 2</h1>
+        <form id="detailsForm">
+            <label for="athleteName">Nombre del Atleta:</label>
+            <input type="text" id="athleteName" required>
+            <label for="judgeName">Nombre del Juez:</label>
+            <input type="text" id="judgeName" required>
+            <button type="submit">Iniciar Competencia</button>
+        </form>
+        
+        <div id="wodSection" style="display:none;">
+            <div class="timer">
+                <span id="time">00:00</span>
+                <button id="startStopButton">Iniciar</button>
+                <button id="resetButton">Reiniciar</button>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ejercicio</th>
+                        <th>Repeticiones</th>
+                        <th>Completo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Box Jump Over</td>
+                        <td id="boxJumpReps">14</td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <tr>
+                        <td>Box Jump Over</td>
+                        <td id="boxJumpReps">12</td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <tr>
+                        <td>Box Jump Over</td>
+                        <td id="boxJumpReps">10</td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <tr>
+                        <td>Box Jump Over</td>
+                        <td id="boxJumpReps">8</td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <tr>
+                        <td>Box Jump Over</td>
+                        <td id="boxJumpReps">6</td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <tr>
+                        <td>Box Jump Over</td>
+                        <td id="boxJumpReps">4</td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <tr>
+                        <td>Box Jump Over</td>
+                        <td id="boxJumpReps">2</td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <tr>
+                        <td>Db Snatch</td>
+                        <td id="dbSnatchReps">2</td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <tr>
+                        <td>Db Snatch</td>
+                        <td id="dbSnatchReps">4</td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <tr>
+                        <td>Db Snatch</td>
+                        <td id="dbSnatchReps">6</td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <tr>
+                        <td>Db Snatch</td>
+                        <td id="dbSnatchReps">8</td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <tr>
+                        <td>Db Snatch</td>
+                        <td id="dbSnatchReps">10</td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <tr>
+                        <td>Db Snatch</td>
+                        <td id="dbSnatchReps">12</td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <tr>
+                        <td>Db Snatch</td>
+                        <td id="dbSnatchReps">14</td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="captureResults">Capturar Resultados</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
