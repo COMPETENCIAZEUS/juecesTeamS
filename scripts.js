@@ -19,6 +19,10 @@ document.getElementById('startStopButton').addEventListener('click', function() 
 
 document.getElementById('resetButton').addEventListener('click', resetTimer);
 
+document.querySelectorAll('.check').forEach(checkbox => {
+    checkbox.addEventListener('change', checkCompletion);
+});
+
 document.getElementById('captureResults').addEventListener('click', captureResults);
 
 function startTimer() {
@@ -43,6 +47,14 @@ function formatTime(sec) {
     const minutes = Math.floor(sec / 60);
     const seconds = sec % 60;
     return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+}
+
+function checkCompletion() {
+    const allChecked = Array.from(document.querySelectorAll('.check')).every(checkbox => checkbox.checked);
+    if (allChecked) {
+        stopTimer();
+        document.getElementById('startStopButton').textContent = 'Iniciar';
+    }
 }
 
 function captureResults() {
